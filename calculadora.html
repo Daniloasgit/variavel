@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Variáveis em JavaScript</title>
+<link rel="stylesheet" href="calculadora.css">
+</head>
+
+<body>
+
+<div class="container">
+<h1>calculadora Simples</h1>
+<input type="number" id="n1" placeholder="Número 1">
+
+<input type="number" id="n2" placeholder="Número 2">
+
+<div class="operacoes">
+    <button id="soma" onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">x</button>
+    <button onclick="calcular('/')">/</button>
+</div>
+
+<p id="res"></p>
+
+</div>
+<script src="calculadora.js"></script>
+</body>
+</html>
