@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>login e senha</title>
+<link rel="stylesheet" href="exemplo.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>LOGIN</h1>
+    <form action="teste.html" id="form-login">
+                <div>
+                    <div><label>email</label></div>
+                    <div><input type="email" id="nomeUsuario" placeholder="Digite seu @email" required></div>
+               
+                    <div><label>senha</label></div>
+                    <input type="password" id="senha" placeholder="Digite sua senha" min="8" required>
+                </div>
+
+
+                <div>   <button type="button" onclick="Entrar()">Entrar</button> </div>
+
+                <div> <button type="button" onclick="alert('teste')">Entrar</button> </div>
+
+                <div><button>registrar</button></div>
+
+
+</form>
+</div>
+
+<script>
+    
+function Entrar() {
+
+var usuario = document.getElementById("nomeUsuario").value;
+usuario.toLowerCase();
+var senha = document.getElementById("senha").value;
+senha.toLowerCase();
+
+if(usuario == "" || senha == ""){ 
+    alert("Os campos usuário e senha são obrigatório")
+}
+else if(usuario == "pao" && senha == "catioro"){
+    alert("Login realizado com sucesso!")
+}
+console.log(usuario,senha)
+}
+
+</script>
+</body>
+</html>
